@@ -2,7 +2,7 @@
 const playerForm = document.getElementById('playerForm');
         const player1 = document.getElementById('player1');
         const player2 = document.getElementById('player2');
-        const startBtn = document.getElementById('myBtn');
+        const startBtn = document.getElementById('submit');
         const gameBoard = document.getElementById('gameBoard');
         const messageDiv = document.querySelector('.message');
         const cells = document.querySelectorAll('.grid-item')
