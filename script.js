@@ -35,7 +35,7 @@ const playerForm = document.getElementById('playerForm');
                     cell.textContent = currentPlayer;
 
                     if(checkWin()){
-                       messageDiv.textContent = `${currentPlayer == 'X' ? player1Name : player2Name} congratulations you won!`;
+                       messageDiv.textContent = `${currentPlayer == 'x' ? player1Name : player2Name} congratulations you won!`;
                         messageDiv.style.color ='Green';
 						gameActive = false;
                         return;
