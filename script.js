@@ -35,7 +35,7 @@ const playerForm = document.getElementById('playerForm');
                     cell.textContent = currentPlayer;
 
                     if(checkWin()){
-                        messageDiv.textContent = `congratulations you won!`;
+                       messageDiv.textContent = `Player ${currentPlayer.toUpperCase()}congratulation you won!`;
                         messageDiv.style.color ='Green';
 						gameActive = false;
                         return;
