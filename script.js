@@ -21,7 +21,7 @@ const playerForm = document.getElementById('playerForm');
             if(player1Name && player2Name){
              gameBoard.style.display = 'block';
              playerForm.style.display = 'none';
-             messageDiv.textContent = `${player1Name}, आपकी चाल`;
+             messageDiv.textContent = `${player1Name}, you're up!`;
             
             }
         });
@@ -35,7 +35,7 @@ const playerForm = document.getElementById('playerForm');
                     cell.textContent = currentPlayer;
 
                     if(checkWin()){
-                        messageDiv.textContent = `${currentPlayer ==  'X' ? player1Name : player2Name}, जीत आपके कदम चूम रही है।`;
+                        messageDiv.textContent = `${currentPlayer ==  'X' ? player1Name : player2Name}, congratulations yu won!`;
                         messageDiv.style.color ='Green';
 						gameActive = false;
                         return;
@@ -48,7 +48,7 @@ const playerForm = document.getElementById('playerForm');
                     }
 
                     currentPlayer = currentPlayer == 'X' ? 'O' : 'X';
-                    messageDiv.textContent = `${currentPlayer == 'X' ? player1Name : player2Name}, आपकी चाल`;
+                    messageDiv.textContent = `${currentPlayer == 'X' ? player1Name : player2Name}, you're up!`;
 
                 }
             });
