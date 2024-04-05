@@ -7,7 +7,7 @@ const playerForm = document.getElementById('playerForm');
         const messageDiv = document.querySelector('.message');
         const cells = document.querySelectorAll('.grid-item')
         
-        let currentPlayer = 'X';
+        let currentPlayer = 'x';
         let player1Name = '';
         let player2Name = '';
         let board = ['', '', '', '', '', '', '', '', '', ''];
@@ -35,7 +35,7 @@ const playerForm = document.getElementById('playerForm');
                     cell.textContent = currentPlayer;
 
                     if(checkWin()){
-                        messageDiv.textContent = `${currentPlayer ==  'X' ? player1Name : player2Name}, congratulations yu won!`;
+                        messageDiv.textContent = `${currentPlayer ==  'x' ? player1Name : player2Name}, congratulations yu won!`;
                         messageDiv.style.color ='Green';
 						gameActive = false;
                         return;
@@ -47,8 +47,8 @@ const playerForm = document.getElementById('playerForm');
                         return;
                     }
 
-                    currentPlayer = currentPlayer == 'X' ? 'O' : 'X';
-                    messageDiv.textContent = `${currentPlayer == 'X' ? player1Name : player2Name}, you're up!`;
+                    currentPlayer = currentPlayer == 'x' ? 'o' : 'x';
+                    messageDiv.textContent = `${currentPlayer == 'x' ? player1Name : player2Name}, you're up!`;
 
                 }
             });
